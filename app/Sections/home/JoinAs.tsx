@@ -1,37 +1,27 @@
 import Image from "next/image";
 
-const JoinAs = () => {
+export default function JoinAs() {
   return (
-    <section className="w-full h-[867px] overflow-hidden">
-      <div className="flex w-full h-full">
-        
-        {/* Left Image */}
-        <div className="relative w-1/2 h-full">
-          <Image
-            src="/left.png"
-            alt="Left image"
-            fill
-            sizes="50vw"
-            className="object-cover"
-            priority
-          />
-        </div>
+    <section className="relative block w-full overflow-hidden">
+      <div className="flex w-full">
+        <Image
+          src="/left.png"
+          alt="Left"
+          width={955}
+          height={864}
+          className="block"
+          priority
+        />
 
-        {/* Right Image */}
-        <div className="relative w-1/2 h-full">
-          <Image
-            src="/right.svg"
-            alt="Right image"
-            fill
-            sizes="50vw"
-            className="object-cover"
-            priority
-          />
-        </div>
-
+        <Image
+          src="/right.png"
+          alt="Right"
+          width={968}
+          height={863}
+          className="block"
+          priority
+        />
       </div>
     </section>
   );
-};
-
-export default JoinAs;
+}

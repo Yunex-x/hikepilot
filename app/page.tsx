@@ -1,5 +1,6 @@
 // pages/index.tsx or app/page.tsx
 
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AiTravelSection from "./Sections/home/AiTravelSection";
 import CommunitySection from "./Sections/home/CommunitySection";
@@ -8,7 +9,6 @@ import FeaturesSection from "./Sections/home/FeaturesSection";
 import HeroSection from "./Sections/home/HeroSection";
 import JoinAs from "./Sections/home/JoinAs";
 import JourneyCards from "./Sections/home/JourneySection";
-import JourneySection from "./Sections/home/JourneySection";
 import LocalGuidesSection from "./Sections/home/LocalGuidesSection";
 import MapExploreSection from "./Sections/home/MapExploreSection";
 import PopularDestinationsSection from "./Sections/home/PopularDestinationsSection";
@@ -31,7 +31,7 @@ export default function Home() {
       <JourneyCards />
       <CommunitySection />
       <JoinAs />
-
+      <Footer />
     </main>
   );
 }
